@@ -7,5 +7,7 @@
 </head>
 <body>
     <h1>Welcome to Home Page</h1>
+
+    Welcome <?php echo $name; ?> <br>
 </body>
 </html>
