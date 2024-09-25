@@ -24,3 +24,7 @@ Route::get('contact', function () {
 Route::get('greetings/{name?}', function ($name = 'Guest') {
     return "Hello $name";
 });
+
+Route::get('customers', function () {
+    return "Customers Section";
+});
