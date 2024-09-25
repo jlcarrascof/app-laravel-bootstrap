@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    echo '<a href="/customers">Client #1</a><br>';
-    echo '<a href="/customers">Client #2</a><br>';
-    echo '<a href="/customers">Client #3</a><br>';
-    echo '<a href="/customers">Client #4</a><br>';
-    echo '<a href="/customers">Client #5</a><br>';
+    echo "<a href='" . route('clients') . "'>Client #1</a><br>";
+    echo "<a href='" . route('clients') . "'>Client #2</a><br>";
+    echo "<a href='" . route('clients') . "'>Client #3</a><br>";
+    echo "<a href='" . route('clients') . "'>Client #4</a><br>";
+    echo "<a href='" . route('clients') . "'>Client #5</a><br>";
 });
 
 Route::get('contact', function () {
@@ -31,4 +31,4 @@ Route::get('greetings/{name?}', function ($name = 'Guest') {
 
 Route::get('customers', function () {
     return "Customers Section";
-});
+})->name('clients');
