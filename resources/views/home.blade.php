@@ -1,3 +1,6 @@
+<?php $name = 'Raoul';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
