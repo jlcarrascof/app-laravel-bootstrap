@@ -8,6 +8,6 @@
 <body>
     <h1>Welcome to Home Page</h1>
 
-    Welcome <?php echo $name; ?> <br>
+    Welcome <?php echo $name ?? "Guest"; ?> <br>
 </body>
 </html>
