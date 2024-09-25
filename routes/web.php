@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return "Welcome from Laravel";
 });
+
+Route::get('contact', function () {
+    return "Contact Page";
+});
