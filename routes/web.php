@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('contact', function () {
     return "Contact Page";
 });
+
+Route::get('greetings/{name}', function ($name) {
+    return "Hello $name";
+});
