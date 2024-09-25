@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('customers', function () {
+Route::get('/', function () {
     return "Customers Section";
-})->name('clients');
+})->name('home');
