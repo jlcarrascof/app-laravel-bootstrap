@@ -21,6 +21,6 @@ Route::get('contact', function () {
     return "Contact Page";
 });
 
-Route::get('greetings/{name}', function ($name) {
+Route::get('greetings/{name?}', function ($name = 'Guest') {
     return "Hello $name";
 });
