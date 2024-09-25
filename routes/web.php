@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return "Welcome from Laravel";
+    echo '<a href="/customers">Client #1</a><br>';
+    echo '<a href="/customers">Client #2</a><br>';
+    echo '<a href="/customers">Client #3</a><br>';
+    echo '<a href="/customers">Client #4</a><br>';
+    echo '<a href="/customers">Client #5</a><br>';
 });
 
 Route::get('contact', function () {
