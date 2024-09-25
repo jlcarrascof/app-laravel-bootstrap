@@ -17,5 +17,5 @@ Route::get('/', function () {
 
     $name = 'John Doe';
 
-    return view('home')->with('name', $name);
+    return view('home')->with(['name' => $name]);
 })->name('home');
