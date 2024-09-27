@@ -18,7 +18,7 @@
 
     <h1>Welcome to Home Page</h1>
 
-    Welcome <?php echo "<script>alert('Hello')</script>"; ?> <br>
+    Welcome <?php echo $name ?? "Guest"; ?> <br>
 
     Welcome {{ $name ?? "Guest" }}  <br>
 
