@@ -20,7 +20,7 @@
 
     Welcome <?php echo $name ?? "Guest"; ?> <br>
 
-    Welcome {{ $name ?? "Guest" }}  <br>
+    Welcome {{ "<script>alert('Hello')</script>" }}  <br>
 
 </body>
 </html>
