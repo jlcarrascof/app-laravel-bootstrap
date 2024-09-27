@@ -6,8 +6,8 @@
     <h1>Portfolio</h1>
 
     <ul>
-        <?php foreach ($portfolio as $portfolioItem): ?>
+        @foreach ($portfolio as $portfolioItem)
             <li>{{ $portfolioItem['title'] }}</li>
-        <?php endforeach; ?>
+        @endforeach
     </ul>
 @endsection
