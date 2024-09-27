@@ -11,5 +11,6 @@
             <li><a href="/contact">Contact</a></li>
         </ul>
     </nav>
+    @yield('content')
 </body>
 </html>
