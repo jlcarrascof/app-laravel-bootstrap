@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>@yield('title')</title>
+    <title>@yield('title', 'Aprendible' )</title>
 </head>
 <body>
     <nav>
