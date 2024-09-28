@@ -6,8 +6,10 @@
     <h1>Portfolio</h1>
 
     <ul>
-        @foreach ($portfolio as $portfolioItem)
-            <li>{{ $portfolioItem['title'] }}</li>
-        @endforeach
+        @if($portfolio)
+            @foreach ($portfolio as $portfolioItem)
+                <li>{{ $portfolioItem['title'] }}</li>
+            @endforeach
+        @endif
     </ul>
 @endsection
