@@ -7,7 +7,7 @@
 
     <ul>
         @forelse ($portfolio as $portfolioItem)
-            <li>{{ $portfolioItem['title'] }} <small>{{ $loop->last ? 'its the last one' : '' }}</small></li>
+            <li>{{ $portfolioItem['title'] }} <small>{{ $loop->first ? 'its the first one' : '' }}</small></li>
         @empty
             <li>No portfolio items found</li>
         @endforelse
