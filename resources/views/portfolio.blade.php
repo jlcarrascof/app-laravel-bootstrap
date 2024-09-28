@@ -6,12 +6,10 @@
     <h1>Portfolio</h1>
 
     <ul>
-        @isset($portfolio)
-            @foreach ($portfolio as $portfolioItem)
-                <li>{{ $portfolioItem['title'] }}</li>
-            @endforeach
-        @else
+        @forelse ($portfolio as $portfolioItem)
+            <li>{{ $portfolioItem['title'] }}</li>
+        @empty
             <li>No portfolio items found</li>
-        @endisset
+        @endforelse
     </ul>
 @endsection
