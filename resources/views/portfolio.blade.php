@@ -6,12 +6,12 @@
     <h1>Portfolio</h1>
 
     <ul>
-        @if($portfolio)
+        @isset($portfolio)
             @foreach ($portfolio as $portfolioItem)
                 <li>{{ $portfolioItem['title'] }}</li>
             @endforeach
         @else
             <li>No portfolio items found</li>
-        @endif
+        @endisset
     </ul>
 @endsection
