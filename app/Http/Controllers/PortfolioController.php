@@ -13,7 +13,14 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        //
+        $portfolio = [
+            [ 'title' => 'Project #1' ],
+            [ 'title' => 'Project #2' ],
+            [ 'title' => 'Project #3' ],
+            [ 'title' => 'Project #4' ]
+        ];
+
+        return view('portfolio', compact('portfolio'));
     }
 
     /**
