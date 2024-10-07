@@ -6,4 +6,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home')->name('home');
 Route::view('/about', 'about')->name('about');
-Route::view('/portfolio', 'PortfolioController');
+Route::get('/portfolio', 'PortfolioController');
