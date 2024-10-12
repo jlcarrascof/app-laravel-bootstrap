@@ -10,3 +10,5 @@ Route::view('/about', 'about')->name('about');
 // Route::get('/portfolio', PortfolioController::class)->name('portfolio');
 Route::resource('/portfolio', PortfolioController::class);
 Route::view('/contact', 'contact')->name('contact');
+
+Route::post('contact', 'MessagesController@store');
