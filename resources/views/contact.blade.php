@@ -6,6 +6,7 @@
     <h1>Contact</h1>
 
     <form method="POST" action="{{ route('contact') }}">
+        @csrf
         <input name="name" placeholder="Name... "><br>
         <input type="email" name="email" placeholder="Email... "><br>
         <input name="subject" placeholder="Subject... "><br>

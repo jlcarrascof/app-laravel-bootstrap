@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\MessagesController;
 
 // Route::view('/', 'home')->name('home'); // Privacy Policy Page, Terms of Service Page, etc.
 
