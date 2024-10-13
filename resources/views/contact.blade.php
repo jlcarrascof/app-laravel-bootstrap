@@ -6,12 +6,12 @@
     <h1>Contact</h1>
     <form method="POST" action="{{ route('contact') }}">
         @csrf
-        <input name="name" placeholder="Name... " value=""><br>
+        <input name="name" placeholder="Name... " value="{{ old('name') }}"><br>
         {!! $errors->first('name', '<small>:message</small><br>') !!}
-        <input type="text" name="email" placeholder="Email... " value=""><br>
+        <input type="text" name="email" placeholder="Email... " value="{{ old('email') }}"><br>
         {!! $errors->first('email','<small>:message</small><br>') !!}
-        <input name="subject" placeholder="Subject... " value="Testing subject"><br>
-        <textarea name="content" placeholder="Message... ">Testing Message</textarea><br>
+        <input name="subject" placeholder="Subject... " value="{{ old('subject') }}"><br>
+        <textarea name="content" placeholder="Message... ">{{ old('content') }}</textarea><br>
         <button >Send</button>
     </form>
 @endsection
