@@ -9,7 +9,8 @@ class MessagesController extends Controller
     public function store()
     {
         request()->validate([
-            'name' => 'required'
+            'name' => 'required',
+            'email' => 'required',
         ]);
 
         return "Data validated successfully";
