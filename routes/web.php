@@ -12,4 +12,4 @@ Route::view('/about', 'about')->name('about');
 Route::resource('/portfolio', PortfolioController::class);
 Route::view('/contact', 'contact')->name('contact');
 
-Route::post('contact', 'MessagesController@store');
+Route::post('contact', [MessagesController::class, 'store'])->name('contact.store');
