@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class MessagesController extends Controller
 {
-    public function store()
+    public function store(Request $request)
     {
-        return "Processing the form ...";
+        return $request;
     }
 }
