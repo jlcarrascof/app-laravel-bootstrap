@@ -5,7 +5,9 @@
 @section('content')
     <h1>Contact</h1>
     @if ($errors->any())
-        Show errors
+        @foreach ($errors->all() as $error)
+            <p>{{ $error }}</p>
+        @endforeach
     @endif
     <form method="POST" action="{{ route('contact') }}">
         @csrf
