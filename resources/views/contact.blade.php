@@ -4,7 +4,7 @@
 
 @section('content')
     <h1>Contact</h1>
-    {{ $errors }}
+    {{ var_dump($errors->any()) }}
     <form method="POST" action="{{ route('contact') }}">
         @csrf
         <input name="name" placeholder="Name... " value="Javier"><br>
